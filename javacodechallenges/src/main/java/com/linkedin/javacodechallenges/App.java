@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class App {
 
     public static double calculateWaterBill(double gallonsUsage) {
-        double minCharge = 18.84;
-        double OneCCF = 748;
-        double TwoCCF = OneCCF * 2;
+        double minCharge = 18.84; // price for the included gollans "2 CCF"
+        double OneCCF = 748; // number of gollans in a CCF
+        double TwoCCF = OneCCF * 2; // number of the included gollans
 
         if(gallonsUsage > TwoCCF){
             double extraGollons = gallonsUsage - TwoCCF;
